@@ -2,5 +2,27 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/hiero.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/ibxm.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/jinput.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/jnlp.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/lwjgl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Developer/slick/lib/natives-mac"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Developer/slick/lib/natives-linux.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/natives-mac.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/natives-win32.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/packulike.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/pedigree.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/scalar.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/slick-examples.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/slick-sources.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/slick-util.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/slick.jar"/>
+	<classpathentry kind="lib" path="/Developer/slick/lib/tinylinepp.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
