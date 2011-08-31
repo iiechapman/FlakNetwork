@@ -93,19 +93,15 @@ public class FlakServer {
 
 		
 		System.out.println("Begin Open Communication...");
-		/*
-		try {
-			while ((inputLine = in.readLine()) != null){
-				
-				System.out.println(inputLine);
-				
-				
-			}
-		} catch (IOException e) {
 		
-			e.printStackTrace();
-		}
-		*/
+			try {
+				inputLine = in.readLine();
+			} catch (IOException e1) {
+				
+				e1.printStackTrace();
+			}	
+		     System.out.println(inputLine);
+
 		
 		try{
 			out.close();
