@@ -93,10 +93,11 @@ public class FlakServer {
 		
 
 		try {
-			while(in.readLine() != null){
+			while(true){
 				
+				if(in.readLine() != null){
 				System.out.println(in.readLine());
-				
+				}
 				
 			}
 		} catch (IOException e) {
