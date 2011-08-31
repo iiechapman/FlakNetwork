@@ -36,6 +36,9 @@ public class FlakServer {
 	public static void main(String[] args){
 		
 
+		System.out.println("Version 1 Flak Server");
+		System.out.println("By Evan Chapman");
+		
 		try{
 			
 			serverSocket = new ServerSocket(8888);
@@ -73,7 +76,7 @@ public class FlakServer {
 
 		out = new PrintWriter(clientSocket.getOutputStream(), true);
 		in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-		System.out.println("NEW LINE to open communication with client...");
+		System.out.println("Open communication with client...");
 	
 
 		
