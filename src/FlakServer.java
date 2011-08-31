@@ -92,6 +92,17 @@ public class FlakServer {
 		System.out.println("Connection Succesfull...");
 		
 
+		try {
+			while(in.readLine() != null){
+				
+				System.out.println(in.readLine());
+				
+				
+			}
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
 		
 			
 

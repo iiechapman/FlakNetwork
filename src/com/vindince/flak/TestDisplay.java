@@ -34,7 +34,7 @@ public class TestDisplay {
     static PrintWriter    out = null;
     static BufferedReader in = null;
     static BufferedReader textIn = null;
-    static String ipAddress = "192.168.1.4";
+    static String ipAddress = "192.168.1.11";
 
     
     
