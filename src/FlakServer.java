@@ -92,16 +92,19 @@ public class FlakServer {
 		System.out.println("Connection Succesfull...");
 		
 
+		
+		
+		System.out.println("Begin Open Communication...");
+		
 		try {
-			while(true){
+			while ((inputLine = in.readLine()) != null){
 				
-				if(in.readLine() != null){
-				System.out.println(in.readLine());
-				}
+				System.out.println(inputLine);
+				
 				
 			}
 		} catch (IOException e) {
-			
+		
 			e.printStackTrace();
 		}
 		
@@ -113,6 +116,31 @@ public class FlakServer {
 }//end class
 		
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 	
 	
