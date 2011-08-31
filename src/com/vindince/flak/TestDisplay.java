@@ -30,11 +30,13 @@ public class TestDisplay {
 	float red,green,blue;
 	
 	
-   public  static Socket flakSocket = null;
-   public  static PrintWriter    out = null;
-   public  static BufferedReader in = null;
-   public  static BufferedReader textIn = null;
-   public  static String ipAddress = "192.168.1.11";
+   public static Socket flakSocket = null;
+   public static PrintWriter    out = null;
+   public static BufferedReader in = null;
+   public static BufferedReader textIn = null;
+   public static String ipAddress = "192.168.1.11";
+   public static String stringToServer,stringFromServer;
+   
 
     
     
@@ -137,7 +139,8 @@ public class TestDisplay {
 			
 			drawPlayerQuad();
 
-			out.println(x + "," + y);
+			stringToServer = x + "," + y;
+			out.println(stringToServer);
 			
 			Display.update();
 			delta = Timer.deltaTime();

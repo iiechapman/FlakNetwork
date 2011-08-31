@@ -24,18 +24,18 @@ import java.io.*;
 public class FlakServer {
 
 	public static int connectionCount = 0;
+	public static PrintWriter out = null;
+	public static BufferedReader in = null;
+	public static String inputLine, outputLine;
+	
+	public static ServerSocket serverSocket = null;
+	public static Socket clientSocket = null;
 	
 	
 	
 	public static void main(String[] args){
 		
-		PrintWriter out = null;
-		BufferedReader in = null;
-		String inputLine, outputLine;
-		
-		ServerSocket serverSocket = null;
-		Socket clientSocket = null;
-		
+
 		try{
 			
 			serverSocket = new ServerSocket(8888);
@@ -90,12 +90,10 @@ public class FlakServer {
 		out.println("Hello world...");
 		
 		System.out.println("Connection Succesfull...");
-		
 
 		
-		
 		System.out.println("Begin Open Communication...");
-		
+		/*
 		try {
 			while ((inputLine = in.readLine()) != null){
 				
@@ -106,6 +104,19 @@ public class FlakServer {
 		} catch (IOException e) {
 		
 			e.printStackTrace();
+		}
+		*/
+		
+		try{
+			out.close();
+			in.close();
+			clientSocket.close();
+			serverSocket.close();
+		} catch (IOException e){
+			
+			e.printStackTrace();
+			System.exit(-1);
+			
 		}
 		
 			
